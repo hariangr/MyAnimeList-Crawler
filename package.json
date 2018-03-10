@@ -1,0 +1,19 @@
+{
+  "name": "myanimelist-crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.0",
+    "mongoose": "^5.0.9",
+    "request": "^2.83.0",
+    "sync": "^0.2.5",
+    "xml2js": "^0.4.19"
+  }
+}
