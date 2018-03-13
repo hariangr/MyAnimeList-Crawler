@@ -1,65 +1,92 @@
-const crawler = require('./crawler')
-const db = require('./database')
+const syncRequest = require('sync-request');
+const syncXmlJson = require('fast-xml-parser');
+const fs = require('fs');
+const path = require('path');
 
-let _crawlErr = 0;
-let _crawlSuc = 0;
+// const allowed_chara = 'abc'.split('');
+const allowed_chara = 'abcdefghijklmnopqrstuvwxyz0123456789'.split('');
 
-function namer(desired){
-    let x = allowed.split('');
-    let cont = []
+function make_request(user) {
+    let x = syncRequest('GET', `https://myanimelist.net/malappinfo.php?u=${user}&status=all&type=anime`).getBody('utf8');
+    let data = syncXmlJson.parse(x);
     
-    function addChar(_cur, _target) {
-        if(_cur.length + 1 == _target) {
-            x.forEach(v => {
-                cont.push(_cur + v)
-            });
-        } else if(_target ==0){
-            cont.push('');
-        } else {
-            x.forEach(v => {
-                addChar(_cur + v, _target);
-            });
-        }
-    }
-    
-    for(let i = 0; i<=desired; i++){
-        addChar('', i)
-    }
-    
-    return cont;
+    return data;
 }
 
-let lengthAllowed = 4;
-const allowed = '0987654321abcdefghijklmnopqrstuvwxyz'
-// const allowed = 'abc'
-let toCrawl = namer(lengthAllowed);
-console.log(toCrawl.length)
-
-// for (let i = 0; i < toCrawl.length; i++) {
-//     const _user = toCrawl[i];
+function generate_string(user, data) {
+    let str = '';
+    if(Array.isArray(data.myanimelist.anime)){
+        data.myanimelist.anime.forEach((val) => {
+            str += val.my_score + ':' + val.series_title + '\n';
+        })
+    } else {
+        str = data.myanimelist.anime.my_score + ':' + data.myanimelist.anime.series_title + '\n'
+    }
     
-//     crawler.crawl(_user);
+    return str;
+}
+
+function write_to_fs (user, data){
+    let to_write = user + '\n' + data;
+    fs.writeFileSync(path.join(__dirname, 'crawled', user + '.txt'), to_write);
+}
+
+let totErr = 0;
+let tot = 0;
+
+function crawl(start, target) {
+    for (let i = start; i < target; i++) {
+        job('', i);
+    }
     
-//     if(i % 100 == 0) {
-//         console.log(i + '/' + toCrawl.length)
-//     }
+    function job(cur, target) {
+        if(cur.length + 1 == target) {
+            allowed_chara.forEach(c => {
+                tot += 1;
+                helper(cur+c);
+            });
+        } else if (cur.length + 1 < target) {
+            allowed_chara.forEach(c => {
+                job(cur + c, target)
+            })
+        }
+    }
+}
+
+function sort_by_score(a, b) {
+    return a.my_score - b.my_score;
+}
+
+function helper(user) {
+    let data = make_request(user);
     
-//     console.log(_user)
-// }
+    if(data.myanimelist.myinfo == undefined || data.myanimelist.anime == undefined) {
+        totErr += 1;
+        console.log(`(${tot}) ` + user + ' not a valid user, total error ' + totErr)
+        return;
+    }
+    
+    if(Array.isArray(data.myanimelist.anime)){
+        // Mencegah error untuk user yang hanya menonton 1 anime,,, I looking at you 'az'
+        data.myanimelist.anime.sort(sort_by_score);
+    }
 
-// console.log('finished\nError: ' + _crawlErr + '\nSukses: ' + _crawlSuc);
+    let str = generate_string(user, data);
+    
+    write_to_fs(user, str);
+    console.log(`(${tot}) ` + user + ' succesfully crawled');
+    
+}
 
-console.log('start');
+let startTime = Date.now();
+crawl(3, 10);
+let finishTime = Date.now();
 
-// // let toCrawl = ['a', 'hariangr', 'c', 'aa', 'ab', 'ac']
-// function callme(cur){
-//     let c = toCrawl[cur];
-//     console.log((cur+1) + '/' + toCrawl.length + ' : ' + c)
-//     crawler.crawl(c, () => {
-//         if(cur + 1 < toCrawl.length){
-//             callme(cur + 1)
-//         }
-//     })
-// }
+console.log(`Time start on ${new Date(startTime)}`);
+console.log(`Finished on ${new Date(finishTime)}`);
+console.log('Time spent: ' + (finishTime - startTime) + 'ms');
 
-// callme(0)
+// let x = make_request('hariangr');
+// console.log(x);
+// console.log(x.myanimelist.anime);
+// console.log(Array.isArray(x.myanimelist.anime));
