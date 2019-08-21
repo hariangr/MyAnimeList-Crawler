@@ -1,0 +1,197 @@
+aai
+0:Minami-ke Tadaima
+0:Naruto
+0:Another
+0:Rozen Maiden
+0:Tenchi Muyou! GXP
+0:K-On!!
+0:Giant Killing
+0:Mitsudomoe
+0:Kiss x Sis (TV)
+0:Detective Conan
+0:InuYasha
+0:One Piece
+0:Serial Experiments Lain
+0:Yu☆Gi☆Oh!: Duel Monsters GX
+0:Shin Tenchi Muyou!
+0:Fullmetal Alchemist: Brotherhood
+0:School Days
+0:Makai Senki Disgaea
+0:Higurashi no Naku Koro ni
+0:Bobobo-bo Bo-bobo
+4:BlazBlue: Alter Memory
+4:Sekai de Ichiban Tsuyoku Naritai!
+5:Yosuga no Sora: In Solitude, Where We Are Least Alone.
+5:Saki
+5:Ano Natsu de Matteru
+5:Mahou Shoujo Ai San: The Anime
+5:Walkure Romanze
+5:RDG: Red Data Girl
+5:Bleach
+5:Fullmetal Alchemist
+5:Clannad
+5:Angel Beats!
+5:Outbreak Company
+5:Digimon Frontier
+5:Kämpfer
+5:.hack//Tasogare no Udewa Densetsu: Offline de Aimashou
+5:.hack//Gift
+5:Death Note
+6:Black★Rock Shooter (OVA)
+6:Toaru Kagaku no Railgun S
+6:Code Geass: Hangyaku no Lelouch
+6:Ar Tonelico: Sekai no Owari de Utai Tsuzukeru Shoujo
+6:Digimon Tamers
+6:Strawberry Panic
+6:High School DxD New
+6:Suzumiya Haruhi no Yuuutsu
+6:Shadow Skill: Eigi
+6:Jinzou Ningen Kikaider The Animation
+6:Golden Time
+6:K-On!
+6:Fate/stay night
+6:Omamori Himari
+6:.hack//Tasogare no Udewa Densetsu
+6:11eyes
+6:Noir
+6:Digimon Adventure 02
+6:Yowamushi Pedal
+6:Free!
+6:Shin Shirayuki-hime Densetsu Prétear
+6:Shuffle!
+6:K
+6:Diamond no Ace
+6:Kono Naka ni Hitori, Imouto ga Iru!
+6:Dragon Crisis!
+6:Mahou Shoujo Madoka★Magica
+6:Mayo Chiki!
+6:Sankarea OVA
+6:Amagami SS+ Plus Specials
+6:Chrno Crusade
+6:Meganebu!
+6:Nisemonogatari
+6:Witch Hunter Robin
+7:Kitakubu Katsudou Kiroku
+7:Rurouni Kenshin: Meiji Kenkaku Romantan
+7:Monogatari Series: Second Season
+7:Mai-HiME
+7:Kobato.
+7:Genshiken
+7:Groove Adventure Rave
+7:Toaru Kagaku no Railgun
+7:Blue Gender
+7:Kill la Kill
+7:Bakuretsu Tenshi
+7:Bakuten Shoot Beyblade
+7:Fruits Basket
+7:Ladies versus Butlers!
+7:Betterman
+7:Final Fantasy VII: Advent Children
+7:Kokoro Connect
+7:Gate Keepers
+7:Highschool of the Dead
+7:Seitokai Yakuindomo
+7:Ore no Imouto ga Konnani Kawaii Wake ga Nai
+7:Kyoukai no Kanata
+7:Samurai Deeper Kyou
+7:Toaru Majutsu no Index II
+7:Amagami SS OVA
+7:Green Green
+7:Duel Masters
+7:Beelzebub
+7:Claymore
+7:Fate/Zero
+7:Ore no Imouto ga Konnani Kawaii Wake ga Nai: SD Chara ni Yoru Character Commentary
+7:Lucky☆Star
+7:Mahou Sensei Negima!
+7:Tsubasa Chronicle
+7:Dakara Boku wa, H ga Dekinai.
+7:Inu x Boku SS
+7:Slayers
+7:.hack//G.U. Returner
+7:Sankarea
+7:DearS
+7:High School DxD
+7:Fate/Zero 2nd Season
+7:Boku wa Tomodachi ga Sukunai Next
+7:Photokano
+8:Yuusha ni Narenakatta Ore wa Shibushibu Shuushoku wo Ketsui Shimashita.
+8:Genshiken 2
+8:R.O.D the TV
+8:Minami-ke
+8:Baka to Test to Shoukanjuu Ni!
+8:Comic Party
+8:Amagami SS
+8:Gunslinger Girl: Il Teatrino
+8:Soul Eater
+8:Shaman King
+8:Toaru Majutsu no Index
+8:Log Horizon
+8:Tonari no Kaibutsu-kun
+8:D.N.Angel
+8:Yahari Ore no Seishun Love Comedy wa Machigatteiru.
+8:s.CRY.ed
+8:Comic Party Revolution
+8:Ao no Exorcist
+8:Minami-ke Okaeri
+8:Gin no Saji
+8:Kimi ni Todoke
+8:Maji de Watashi ni Koi Shinasai!
+8:Hagure Yuusha no Aesthetica
+8:Ore no Nounai Sentakushi ga, Gakuen Love Comedy wo Zenryoku de Jama Shiteiru
+8:Bartender
+8:Mirai Nikki (TV)
+8:Wolf's Rain
+8:Hyouka
+8:Chuunibyou demo Koi ga Shitai!
+8:Oda Nobuna no Yabou
+8:Nyan Koi!
+8:Amagami SS+ Plus
+8:Hellsing
+8:Watashi ga Motenai no wa Dou Kangaetemo Omaera ga Warui!
+8:Working!!
+8:Servant x Service
+8:Hataraku Maou-sama!
+8:Hayate no Gotoku!
+8:Black Lagoon
+9:Yu☆Gi☆Oh! (Movie)
+9:Lupin III
+9:Campione!: Matsurowanu Kamigami to Kamigoroshi no Maou
+9:Boku wa Tomodachi ga Sukunai
+9:Persona 4 the Animation
+9:Kamisama no Memochou
+9:Working'!!
+9:Hanasaku Iroha
+9:Sakurasou no Pet na Kanojo
+9:Kore wa Zombie Desu ka?
+9:Kaichou wa Maid-sama!
+9:Minami-ke Omatase
+9:Baka to Test to Shoukanjuu
+9:Trigun
+9:Bakemonogatari
+9:Toradora!
+9:Minami-ke Okawari
+9:Kore wa Zombie Desu ka? of the Dead
+9:Erementar Gerad
+9:Kami nomi zo Shiru Sekai: Megami-hen
+9:.hack//Roots
+9:School Rumble Ni Gakki
+9:Dragon Ball Z
+9:Digimon Adventure
+9:Pokemon
+9:Yu☆Gi☆Oh! Duel Monsters
+9:Yuu☆Yuu☆Hakusho
+9:FLCL
+9:Samurai Champloo
+9:Vandread
+9:Gunslinger Girl
+9:Air
+9:Full Metal Panic! The Second Raid
+9:Full Metal Panic? Fumoffu
+9:.hack//Sign
+10:Hunter x Hunter (2011)
+10:Steins;Gate
+10:Full Metal Panic!
+10:Danshi Koukousei no Nichijou
+10:School Rumble
+10:Cowboy Bebop
